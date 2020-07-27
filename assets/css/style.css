@@ -1,0 +1,91 @@
+body {
+  font-family: "Open Sans", Sans-serif;
+}
+.container-fluid {
+  padding: 0px !important;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  flex-direction: column;
+}
+.todo-container h2 {
+  font-family: "Open Sans", Sans-serif;
+  font-size: 56px;
+  margin: 120px 0px 50px 0px !important;
+  text-align: center;
+  color: #5F5245;
+  font-style: italic;
+  font-weight: 700;
+}
+.input-field {
+  width: 65%;
+}
+.delete-btn {
+  margin: 0px 45px;
+}
+.todo-items-list {
+  width: 65%;
+  margin: 10px 0px;
+}
+#list li {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #5F5245;
+}
+#list li:before {
+  content: "\f00c";
+  display: inline-block;
+  font: normal normal normal 8px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin: 0px 10px 0px 0px;
+  font-size: 20px;
+}
+#btn-container{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.delete-btn {
+  position: absolute;
+  right: 0px;
+}
+.edit-btn{
+  position: absolute;
+  right: 150px;
+}
+.col-md-7 {
+  background-image: url('../../assets/img/todo-bg.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+@media(max-width: 767px) { 
+  .col-md-7 {
+    display: none;
+  }
+  .todo-items-list { 
+    width: 100%  !important;
+  }
+  .input-field {
+    width: 95% !important;
+  }
+  #list li {
+    font-size: 24px !important;
+    margin: 10px !important;
+  }
+  .delete-btn {
+    margin: 0px 15px !important;
+  }
+  .edit-btn {
+    position: absolute;
+    right: 100px !important;
+  }
+}

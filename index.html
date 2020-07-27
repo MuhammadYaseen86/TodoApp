@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:300,400,600,700%7CPoppins:400,500,600,700%7CWork+Sans:300,400%7COpen+Sans:400,600,700&amp;subset=latin,latin-ext">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="todo-container">
+					<h2>To Do App</h2>
+					<div class="input-field">
+	                    <input type="text" id="todo-text" name="todo-text">
+	                    <label for="todo-text">Add Your Daily Rountine</label>
+	                </div>
+					<button  type="button" class="btn btn-success add-todo-item" onclick="addtodo()">Add Item</button>
+					<div class="todo-items-list">
+						<ul id="list">
+						<ul>
+					</div>
+					<div id="btn-container"></div>
+				</div>
+			</div>
+			<div class="col-md-7"></div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 	<script src="assets/js/app.js"></script>
+</body>
+</html>
